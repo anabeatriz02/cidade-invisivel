@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img/MicrosoftTeams-image.png");
+    background-color: #00000055;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: right top;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+    color: white;
+}
+
+header{
+    background-color: #000000AA;
+    height: 80px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    user-select: none;
+    transition: all 1s;
+}
+
+.links a:hover{
+    color: red;
+}
+
+.links ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.logo img{
+    width: 150px;
+}
+
+main{
+    padding: 25vh 10vw;
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+main h2{
+    font-size: 30px;
+}
+
+main h1{
+    position: relative;
+    font-size: 80px;
+    font-family: Helvetica;
+    color: #00000000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(247, 247, 247);
+}
+
+
+main p{
+    font-size: 25px;
+    font-weight: 200;
+    max-width: 450px;
+   
+}
+
+
+.informações{
+    display: flex;
+    flex-direction: row;
+}
+
+.sobreAtor{
+    display: flex;
+    flex-direction: column;
+    border-right: solid 3px #D81F26;
+    margin-right: 35px;
+    width: 150px;
+    font-style: italic;
+    padding-left: 3px;
+}
+
+.ator{
+    font-size: 15px;
+}
+
+.sobrePersonagem{
+    display: flex;
+    flex-direction: column;
+    border-right: solid 2px #D81F26;
+    margin-right: 25px;
+    width: 160px;
+    font-style: italic;
+    padding-left: 3px;
+}
+
+.sobreEntidade{
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    padding-left: 3px;
+}
+
+@keyframes voar{
+
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(-90px, -90px);
+    }
+}
